@@ -1,0 +1,367 @@
+:root{
+    --red:#d92027;
+    --black:#342b38;
+    --blue:#35d0ba;
+    --white:#f4f4f4;
+    --purple:#23034F;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    background: #fff;
+    overflow-x: hidden;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+/**Menu de navegacion**/
+#header{
+    position: relative;
+    width: 100%;
+}
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: #fff;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+}
+.menu .logo-box img{
+    top: 0;
+    left: 0px;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    margin-left: 20px;
+    margin-top: 10px;
+    border-radius: 50px;
+}
+.menu .logo-box h1 a{
+    text-decoration: none;
+    font-size: var(--title);
+    font-weight: 400;
+    color: var(--black);
+}
+.menu .list-container{
+    margin-right: 20px;
+}
+.menu .list-container .list{
+    display: flex;
+}
+.menu .list-container .list li{
+    list-style: none;
+}
+.menu .list-container .list li a{
+    text-decoration: none;
+    margin: 0px 10px;
+    padding: 8px;
+    color: var(--purple);
+    border-radius: 24px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+.menu .list-container .list li a.activo{
+    background: var(--blue);
+    color: #fff;
+}
+.menu .list-container .list li a:hover{
+    background: var(--blue);
+    color: #fff;
+}
+.btn-menu > .fa-bars{
+    display: none;
+}
+/**Menu de navegacion**/
+
+/**Que quieres aprender-TITULO**/
+.aprender{
+    width: 100%;
+    margin-top: 120px;
+}
+.aprender .aprender-titulo{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.aprender .aprender-titulo h1{
+    font-size: 50px;
+    font-weight: 400;
+    color: var(--black);
+    text-align: center;
+    margin-bottom: 20px;
+}
+/**Que quieres aprender-TITULO**/
+
+/**Que quieres aprender-CURSOS**/
+.aprender{
+    width: 100%;
+    margin-top: 120px;
+}
+.aprender .aprender-cursos{
+    width: 90%;
+    margin: 80px auto;
+
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+.aprender .aprender-cursos .aprender-cuadro{
+    width: 45%;
+    margin: 20px;
+}
+.aprender .aprender-cursos .aprender-cuadro .aprende-img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aprender .aprender-cursos .aprender-cuadro .aprende-img img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+.aprender .aprender-cursos .aprender-cuadro .aprender-text{
+    width: 100%;
+    border: 2px solid var(--purple);
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 200ms;
+}
+.aprender .aprender-cursos .aprender-cuadro .aprender-text h4{
+    color: var(--purple);
+    font-weight: normal;
+    font-size: 27px;
+    text-align: center;
+    margin: 20px;
+    margin-bottom: 20px;
+    transition: 200ms;
+}
+.aprender .aprender-cursos .aprender-cuadro .aprender-text p{
+    font-size: 19px;
+    color: var(--purple);
+    text-align: center;
+    line-height: 35px;
+    transition: 200ms;
+}
+.aprender .aprender-cursos .aprender-cuadro .aprender-text:hover{
+    border: 2px solid var(--blue);
+}
+.aprender .aprender-cursos .aprender-cuadro .aprender-text:hover h4{
+    color: var(--blue)
+}
+.aprender .aprender-text > button{
+    width: 150px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--purple);
+    border-radius: 24px;
+    border: none;
+    font-size: 22px;
+    color: #fff;
+    margin: 0 auto;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.aprender .aprender-text > button a{
+    text-decoration: none;
+    color: #fff;
+}
+.aprender .aprender-text > button:hover{
+    background: var(--blue);
+}
+/**Que quieres aprender-CURSOS**/
+
+.testimonios{
+    width: 100%;
+    margin-top: 120px;
+}
+.testimonios .testimonios-title{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+.testimonios .testimonios-title h2{
+    font-size: 50px;
+    color: var(--black);
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.testimonios .testimonios-title hr{
+    width: 60%;
+    margin: auto;
+    height: 2px;
+    background: var(--black);
+    border: none;
+}
+.testimonios .box-testimonios{
+    width: 90%;
+    margin: 80px auto;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.testimonios .box-testimonios .card-testimonios{
+    width: 45%;
+    margin: 20px;
+}
+.testimonios .box-testimonios .card-testimonios .card-img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.testimonios .box-testimonios .card-testimonios .card-img img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+.testimonios .box-testimonios .card-testimonios .testimonios-text{
+    width: 100%;
+    border: 2px solid var(--purple);
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 200ms;
+}
+.testimonios .box-testimonios .card-testimonios .testimonios-text h4{
+    color: var(--purple);
+    font-weight: normal;
+    font-size: 27px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: 200ms;
+}
+.testimonios .box-testimonios .card-testimonios .testimonios-text p{
+    font-size: 19px;
+    color: var(--black);
+    text-align: center;
+    line-height: 35px;
+    transition: 200ms;
+}
+.testimonios .box-testimonios .card-testimonios .testimonios-text:hover{
+    border: 2px solid var(--blue);
+}
+.testimonios .box-testimonios .card-testimonios .testimonios-text:hover h4{
+    color: var(--blue)
+}
+.testimonios .testimonios-text > button{
+    width: 150px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--purple);
+    border-radius: 24px;
+    border: none;
+    font-size: 22px;
+    color: #fff;
+    margin: 0 auto;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.testimonios .testimonios-text > button a{
+    text-decoration: none;
+    color: #fff;
+}
+.testimonios .testimonios-text > button:hover{
+    background: var(--blue);
+}
+
+/**Derechos reservados**/
+.footer{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(../img/footer.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.footer-text{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background: rgba(0, 0, 0, 0.8);
+    border-top: 5px solid #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-text p{
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+}
+/**Media Query**/
+@media only screen and (max-width:900px){
+    .btn-menu > .fa-bars{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        font-size: 28px;
+        cursor: pointer;
+    }
+    .btn-menu > .fa-bars:hover{color: var(--blue);}
+    .btn-menu > .fa-times{color: var(--blue);}
+    .menu .list-container{
+        position: absolute;
+        top: 60px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 60px);
+        background: #fff;
+    }
+    .menu .list-container .list{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-top: 5px solid var(--blue);
+    }
+    .menu .list-container .list li{
+        width: 90%;
+        margin: 10px 0px;
+        border-bottom: 1px solid var(--blue);
+        text-align: center;
+    }
+    .menu .list-container .list li a{
+        font-size: 20px;
+    }
+    .menu .list-container .list li a.activo{
+        background: none;
+        color: var(--blue);
+    }
+    .menu .list-container .list li a:hover{
+        background: none;
+        color: var(--blue);
+    }
+}
